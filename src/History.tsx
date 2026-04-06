@@ -2,12 +2,11 @@ import React from 'react';
 
 const History: React.FC = () => {
   return (
-    /* O ID AQUI TEM DE SER IGUAL AO HREF DO HEADER */
     <section id="quem-somos" className="py-24 bg-white overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
-          {/* Lado do Texto */}
+        
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-6 leading-tight">
               A nossa missão é <span className="text-brand-orange">resolver o seu problema.</span>
@@ -15,20 +14,39 @@ const History: React.FC = () => {
             <div className="w-24 h-2 bg-brand-orange rounded-full mb-8"></div>
             
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              A PJ Soluções em Refrigeração nasceu com um propósito muito claro: levar tranquilidade e conforto para as famílias e empresas de Natal e região.
+              A PJ Soluções em Refrigeração nasceu com um propósito muito claro: levar tranquilidade e conforto para as famílias e empresas de Natal e região. Sabíamos que encontrar uma assistência técnica de confiança era um desafio.
             </p>
             
-            <p className="text-gray-600 leading-relaxed text-lg mb-10">
+            <p className="text-gray-600 leading-relaxed text-lg mb-8">
               Ao longo dos anos, construímos a nossa reputação baseada na satisfação de cada cliente atendido. Hoje, somos referência em manutenção e climatização.
             </p>
+
+           
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <h3 className="text-xl font-extrabold text-brand-blue mb-4">Nossos Diferenciais</h3>
+              <ul className="space-y-4 font-bold text-gray-700">
+                <li className="flex items-start gap-3">
+                  <svg className="text-brand-orange mt-1 shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><span className="text-brand-blue">Atendimento Rápido:</span> Seu equipamento não pode esperar.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="text-brand-orange mt-1 shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><span className="text-brand-blue">Peças Originais:</span> Uso exclusivo de componentes com garantia.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="text-brand-orange mt-1 shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><span className="text-brand-blue">Equipe Qualificada:</span> Técnicos certificados e transparentes.</span>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
-          {/* Lado da Imagem */}
           <div className="w-full lg:w-1/2 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10 border-8 border-white">
                <img 
                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop" 
-                 alt="Equipa a trabalhar" 
+                 alt="Equipe trabalhando" 
                  className="w-full h-auto object-cover md:h-[500px]" 
                />
             </div>
