@@ -9,3 +9,6 @@
   --color-brand-lightGray: #F7F9FA;
   --font-sans: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
