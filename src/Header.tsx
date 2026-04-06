@@ -22,17 +22,7 @@ const Header: React.FC = () => {
             </a>
           </div>
 
-          {/* Área de Busca */}
-          <div className="relative flex items-center w-full md:w-auto md:min-w-[450px]">
-            <input 
-              type="text" 
-              placeholder="O que você está procurando?" 
-              className="bg-white text-brand-blue w-full px-6 py-3.5 rounded-full text-[15px] placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-orange border-2 border-brand-blue shadow-sm transition-all"
-            />
-            <button className="absolute right-0 top-0 bottom-0 bg-brand-blue hover:bg-blue-900 transition-colors rounded-r-full flex items-center justify-center px-7 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            </button>
-          </div>
+         
 
           {/* Canto Direito - Botão do WhatsApp Gigante */}
           <div className="flex items-center gap-6 text-sm">

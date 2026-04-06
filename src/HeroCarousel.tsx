@@ -1,23 +1,23 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
+// Link do WhatsApp com mensagem pré-definida e codificada
+const WHA_LINK = "https://wa.me/558421367575?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20assist%C3%AAncia%20t%C3%A9cnica.";
+
 const slides = [
   {
     id: 1,
-    // Imagem focada em Geladeira/Cozinha Moderna
     image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1920&auto=format&fit=crop",
     title: "Assistência Técnica Especializada",
     subtitle: "Conserto e manutenção de geladeiras, freezers e linha branca com peças originais.",
   },
   {
     id: 2,
-    // Imagem focada em Ar Condicionado / Manutenção
     image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop",
     title: "Instalação de Ar Condicionado",
     subtitle: "Ambiente perfeito com técnicos homologados e garantia estendida de serviço.",
   },
   {
     id: 3,
-    // Imagem de técnico trabalhando/consertando
     image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1920&auto=format&fit=crop",
     title: "Peças Originais e Acessórios",
     subtitle: "Maior durabilidade e segurança para os seus eletrodomésticos.",
@@ -43,7 +43,6 @@ const HeroCarousel: React.FC = () => {
   return (
     <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-brand-blue group">
       
-      {/* Slides */}
       {slides.map((slide, index) => (
         <div 
           key={slide.id}
@@ -59,25 +58,25 @@ const HeroCarousel: React.FC = () => {
             <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-8 drop-shadow-md">
               {slide.subtitle}
             </p>
-           <a href="#" className="bg-brand-orange hover:bg-[#E69200] text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105">
-                Solicitar Orçamento
-                </a>
+            {/* BOTÃO ATUALIZADO: href={WHA_LINK} e hover:bg-[#E69200] */}
+            <a 
+              href={WHA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-brand-orange hover:bg-[#E69200] text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105"
+            >
+              Solicitar Orçamento
+            </a>
           </div>
         </div>
       ))}
 
       {/* Setas de Navegação Manual */}
-      <button 
-        onClick={prevSlide}
-        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-brand-orange text-white p-3 rounded-full opacity-70 group-hover:opacity-100 transition-all backdrop-blur-sm"
-      >
+      <button onClick={prevSlide} className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-brand-orange text-white p-3 rounded-full opacity-70 group-hover:opacity-100 transition-all backdrop-blur-sm">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       </button>
 
-      <button 
-        onClick={nextSlide}
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-brand-orange text-white p-3 rounded-full opacity-70 group-hover:opacity-100 transition-all backdrop-blur-sm"
-      >
+      <button onClick={nextSlide} className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-brand-orange text-white p-3 rounded-full opacity-70 group-hover:opacity-100 transition-all backdrop-blur-sm">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </button>
 
