@@ -29,7 +29,7 @@ const categories = [
 
 const Categories: React.FC = () => {
   return (
-    <section className="w-full py-20 bg-white border-b border-gray-100">
+    <section id="produtos" className="w-full py-20 bg-white border-b border-gray-100 scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10">
         
         <div className="text-center mb-16">
@@ -41,7 +41,7 @@ const Categories: React.FC = () => {
           {categories.map((cat, index) => (
             <a 
               key={index} 
-              href="#" 
+              href="#contato" 
               className="flex flex-col items-center justify-center w-[150px] md:w-[170px] p-6 bg-white rounded-2xl shadow-sm border-2 border-gray-100 hover:shadow-xl hover:-translate-y-2 hover:border-brand-orange transition-all duration-300 group"
             >
               <div className="text-brand-orange mb-4 group-hover:scale-110 transition-transform duration-300">
