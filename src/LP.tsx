@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Categories from './Categories';
 import History from './History';
+import FeedbackCarousel from './FeedbackCaroulsel';
 const LandingPage: React.FC = () => {
   return (
 <div className="font-sans min-h-screen flex flex-col overflow-x-hidden">
@@ -14,7 +15,9 @@ const LandingPage: React.FC = () => {
         <Hero />
         <History /> 
         <Categories />
+        <FeedbackCarousel/>
         <Contact />
+        
       </main>
 
       <Footer />
