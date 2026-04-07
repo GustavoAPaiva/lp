@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoUrl from './assets/logoho.svg'; 
+import logoUrl from './assets/logoho.svg';
 
 const navLinks = [
   { href: '#inicio', label: 'Início' },
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 </li>
               );
             })}
-            </ul>
+          </ul>
         </nav>
       </div>
     </header>

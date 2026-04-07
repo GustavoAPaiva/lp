@@ -2,7 +2,7 @@
 
 @theme {
   --color-brand-blue: #041E50;
-  --color-brand-orange: #FFA300;
+  --color-brand-orange: #F2574C;
   --color-brand-grayDark: #54595F;
   --color-brand-grayText: #7A7A7A;
   --color-brand-cyan: #009ABF;
@@ -49,10 +49,10 @@ html {
 
 @keyframes contactPulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(255, 163, 0, 0.55);
+    box-shadow: 0 0 0 0 rgba(242, 87, 76, 0.55);
   }
   50% {
-    box-shadow: 0 0 0 14px rgba(255, 163, 0, 0);
+    box-shadow: 0 0 0 14px rgba(242, 87, 76, 0);
   }
 }
 

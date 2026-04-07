@@ -58,15 +58,14 @@ const HeroCarousel: React.FC = () => {
             <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-8 drop-shadow-md">
               {slide.subtitle}
             </p>
-            {/* BOTÃO ATUALIZADO: href={WHA_LINK} e hover:bg-[#E69200] */}
-             <a 
-               href={WHA_LINK}
-               target="_blank"
-               rel="noopener noreferrer"
-               className="cta-shine bg-brand-orange hover:bg-[#E69200] text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105 relative overflow-hidden"
-             >
-               Solicitar Orçamento
-             </a>
+            <a 
+              href={WHA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-shine bg-brand-orange hover:brightness-95 text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105 relative overflow-hidden"
+            >
+              Solicitar Orçamento
+            </a>
           </div>
         </div>
       ))}

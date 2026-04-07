@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import Header from './Header';
 import HeroCarousel from './HeroCarousel';
+import Differentials from './Differentials';
+import History from './History';
 import Categories from './Categories';
 import Services from './Services';
-import Differentials from './Differentials';
-import Footer from './Footer';
 import FeedbackCarousel from './FeedbackCaroulsel';
-import History from './History';
+import Contact from './Contact';
+import Footer from './Footer';
+
 const LandingPage: React.FC = () => {
   useEffect(() => {
     const revealElements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
@@ -40,16 +42,17 @@ const LandingPage: React.FC = () => {
   }, []);
 
   return (
-  <div className="font-sans min-h-screen flex flex-col overflow-x-hidden">
+    <div className="font-sans min-h-screen flex flex-col overflow-x-hidden">
       <Header />
-      
+
       <main className="flex-grow">
         <HeroCarousel />
         <Differentials />
-        <History /> 
+        <History />
         <Categories />
         <Services />
         <FeedbackCarousel />
+        <Contact />
       </main>
 
       <Footer />

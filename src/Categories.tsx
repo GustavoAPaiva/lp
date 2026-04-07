@@ -41,7 +41,7 @@ const Categories: React.FC = () => {
           {categories.map((cat, index) => (
             <a
               key={index} 
-              href="#"
+              href="#contato" 
               data-reveal
               data-reveal-delay={String(70 + index * 60)}
               className="flex flex-col items-center justify-center w-[150px] md:w-[170px] p-6 bg-white rounded-2xl shadow-sm border-2 border-gray-100 hover:shadow-xl hover:-translate-y-2 hover:border-brand-orange transition-all duration-300 group"

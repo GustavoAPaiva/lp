@@ -1,14 +1,13 @@
 import React from 'react';
 import logoVerticalUrl from './assets/logover.svg'; 
-import seloEletro from './assets/seloeletrolux.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contato" className="bg-[#021333] text-gray-300 border-t-[6px] border-brand-orange relative scroll-mt-24 md:scroll-mt-32">
+    <footer id="rodape" className="bg-[#021333] text-gray-300 border-t-[6px] border-brand-orange relative scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           
-          {/* Coluna 1: Logo, Sobre e Selo Electrolux */}
+          {/* Coluna 1: Logo e Sobre */}
           <div className="flex flex-col items-center md:items-start">
             <img 
               src={logoVerticalUrl} 
@@ -18,15 +17,6 @@ const Footer: React.FC = () => {
             <p className="text-sm text-center md:text-left leading-relaxed mb-8">
               Assistência Técnica Especializada em Refrigeração. Atendimento rápido, peças originais e garantia no serviço para sua total tranquilidade.
             </p>
-            
-            {/* Selo Electrolux (com fundo leve para destacar no azul escuro) */}
-            <div className="bg-white/5 p-3 rounded-xl border border-white/10">
-                <img 
-                  src={seloEletro} 
-                  alt="Autorizada Electrolux" 
-                  className="h-10 md:h-12 w-auto object-contain" 
-                />
-            </div>
           </div>
 
           {/* Coluna 2: Links Rápidos */}
