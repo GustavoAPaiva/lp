@@ -8,7 +8,7 @@ const History: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Lado do Texto */}
-          <div className="w-full lg:w-1/2">
+          <div data-reveal className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-6 leading-tight">
               A nossa missão é <span className="text-brand-orange">resolver o seu problema.</span>
             </h2>
@@ -24,7 +24,7 @@ const History: React.FC = () => {
           </div>
 
           {/* Lado da Imagem */}
-          <div className="w-full lg:w-1/2 relative">
+          <div data-reveal data-reveal-delay="120" className="w-full lg:w-1/2 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl z-10 border-8 border-white">
                <img 
                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop" 

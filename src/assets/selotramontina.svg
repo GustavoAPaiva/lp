@@ -1,0 +1,8 @@
+<svg width="520" height="180" viewBox="0 0 520 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="180" rx="20" fill="#F5F8FF"/>
+  <rect x="8" y="8" width="504" height="164" rx="16" stroke="#0B2C6A" stroke-width="4"/>
+  <circle cx="90" cy="90" r="44" fill="#0B2C6A"/>
+  <path d="M70 72H110V84H96V124H84V84H70V72Z" fill="white"/>
+  <text x="156" y="86" fill="#0B2C6A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="1.5">TRAMONTINA</text>
+  <text x="156" y="118" fill="#0B2C6A" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="2">AUTORIZADA</text>
+</svg>

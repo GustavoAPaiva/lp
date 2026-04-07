@@ -41,7 +41,7 @@ const HeroCarousel: React.FC = () => {
   }, [nextSlide, currentSlide]);
 
   return (
-    <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-brand-blue group">
+    <section id="inicio" className="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-brand-blue group scroll-mt-24 md:scroll-mt-32">
       
       {slides.map((slide, index) => (
         <div 
@@ -59,14 +59,14 @@ const HeroCarousel: React.FC = () => {
               {slide.subtitle}
             </p>
             {/* BOTÃO ATUALIZADO: href={WHA_LINK} e hover:bg-[#E69200] */}
-            <a 
-              href={WHA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-brand-orange hover:bg-[#E69200] text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105"
-            >
-              Solicitar Orçamento
-            </a>
+             <a 
+               href={WHA_LINK}
+               target="_blank"
+               rel="noopener noreferrer"
+               className="cta-shine bg-brand-orange hover:bg-[#E69200] text-brand-blue font-extrabold text-lg md:text-xl py-3 md:py-4 px-8 md:px-10 rounded-full shadow-xl transition-all hover:scale-105 relative overflow-hidden"
+             >
+               Solicitar Orçamento
+             </a>
           </div>
         </div>
       ))}

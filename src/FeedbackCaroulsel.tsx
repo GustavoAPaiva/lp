@@ -38,13 +38,15 @@ const FeedbackCarousel: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <section className="py-20 bg-gray-50 border-t border-b border-gray-200 relative overflow-hidden">
+    <section id="depoimentos" className="py-20 bg-gray-50 border-t border-b border-gray-200 relative overflow-hidden scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10 text-center">
         
-        <h2 className="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">O que nossos clientes dizem</h2>
-        <div className="w-24 h-1.5 bg-brand-orange mx-auto rounded-full mb-12"></div>
+        <div data-reveal>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">O que nossos clientes dizem</h2>
+          <div className="w-24 h-1.5 bg-brand-orange mx-auto rounded-full mb-12"></div>
+        </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div data-reveal data-reveal-delay="140" className="relative max-w-4xl mx-auto">
           
           {/* Botão Voltar */}
           <button 

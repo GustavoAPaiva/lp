@@ -20,11 +20,11 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <section className="py-20 bg-brand-blue">
+    <section id="servicos" className="py-20 bg-brand-blue scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10">
         
         {/* Título com cores invertidas (Branco) */}
-        <div className="text-center mb-16">
+        <div data-reveal className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">Nossos Serviços</h2>
           <div className="w-24 h-1.5 bg-brand-orange mx-auto rounded-full"></div>
         </div>
@@ -32,8 +32,10 @@ const Services: React.FC = () => {
         {/* Cards estilo "Glass/Dark Mode" */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index} 
+              data-reveal
+              data-reveal-delay={String(90 + index * 120)}
               className="bg-white/5 p-10 rounded-2xl shadow-lg border border-white/10 hover:bg-white/10 hover:border-brand-orange/50 hover:-translate-y-2 transition-all duration-300 group"
             >
               {/* Círculo do Ícone */}

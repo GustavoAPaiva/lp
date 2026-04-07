@@ -29,19 +29,21 @@ const categories = [
 
 const Categories: React.FC = () => {
   return (
-    <section className="w-full py-20 bg-white border-b border-gray-100">
+    <section id="produtos" className="w-full py-20 bg-white border-b border-gray-100 scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10">
         
-        <div className="text-center mb-16">
+        <div data-reveal className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">Nossos Produtos</h2>
           <div className="w-24 h-1.5 bg-brand-orange mx-auto rounded-full"></div>
         </div>
         
         <div className="flex flex-wrap justify-center gap-6 md:gap-10">
           {categories.map((cat, index) => (
-            <a 
+            <a
               key={index} 
-              href="#" 
+              href="#"
+              data-reveal
+              data-reveal-delay={String(70 + index * 60)}
               className="flex flex-col items-center justify-center w-[150px] md:w-[170px] p-6 bg-white rounded-2xl shadow-sm border-2 border-gray-100 hover:shadow-xl hover:-translate-y-2 hover:border-brand-orange transition-all duration-300 group"
             >
               <div className="text-brand-orange mb-4 group-hover:scale-110 transition-transform duration-300">

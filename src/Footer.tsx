@@ -4,7 +4,7 @@ import seloEletro from './assets/seloeletrolux.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#021333] text-gray-300 border-t-[6px] border-brand-orange relative">
+    <footer id="contato" className="bg-[#021333] text-gray-300 border-t-[6px] border-brand-orange relative scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-4 md:px-10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           
@@ -33,9 +33,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-white font-bold text-lg mb-6">Links Úteis</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#home" className="hover:text-brand-orange transition-colors">Início</a></li>
+              <li><a href="#inicio" className="hover:text-brand-orange transition-colors">Início</a></li>
               <li><a href="#quem-somos" className="hover:text-brand-orange transition-colors">Quem Somos</a></li>
               <li><a href="#servicos" className="hover:text-brand-orange transition-colors">Nossos Serviços</a></li>
+              <li><a href="#diferenciais" className="hover:text-brand-orange transition-colors">Diferenciais</a></li>
               <li><a href="#" className="hover:text-brand-orange transition-colors">Política de Privacidade</a></li>
             </ul>
           </div>
